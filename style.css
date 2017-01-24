@@ -299,7 +299,15 @@ body {
         box-sizing:border-box;
         left:0;
     }
-
+    
+    #navbar {
+        height: 7em !important;
+    }
+    
+    .banner-visible {
+        top: 7em !important;
+    }
+    
     #navbar > div {
         float:none;
         margin:auto;
