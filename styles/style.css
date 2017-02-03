@@ -38,7 +38,7 @@ body {
     z-index:1000;
     background-color: #fff;
     border-bottom:1px solid #f0f0f0;
-    
+
 }
 
 #navbar > div {
@@ -101,7 +101,7 @@ body {
     font-size:13px;
     font-weight:900;
     letter-spacing:1px;
-    
+
 }
 
 #logo img {
@@ -112,7 +112,7 @@ body {
 #bg {
     height:100%;
     width:100%;
-    background-image:url("spaceman.jpeg");
+    background-image:url("/assets/img/spaceman.jpeg");
     background-size:cover;
     position:absolute;
     top:0;
@@ -184,8 +184,8 @@ body {
 @-webkit-keyframes innout {
     from {
         -webkit-transform:scale(1);
-    }    
-    
+    }
+
     to {
         -webkit-transform:scale(1.05);
     }
@@ -194,8 +194,8 @@ body {
 @-moz-keyframes innout {
     from {
         -moz-transform:scale(1);
-    }    
-    
+    }
+
     to {
         -moz-transform:scale(1.05);
     }
@@ -204,11 +204,11 @@ body {
 @keyframes innout {
      from {
         transform:scale(1);
-    }    
-    
+    }
+
     to {
         transform:scale(1.05);
-    }  
+    }
 }
 
 #overlay {
@@ -299,30 +299,30 @@ body {
         box-sizing:border-box;
         left:0;
     }
-    
+
     #navbar {
         height: 7em !important;
     }
-    
+
     .banner-visible {
         top: 7em !important;
     }
-    
+
     #navbar > div {
         float:none;
         margin:auto;
         width:100%;
         text-align:center;
     }
-    
+
     #mssg-text {
         display:none;
     }
-    
+
     * {
         font-size:12px !important;
     }
-    
+
     #logo img {
         width:80px;
     }
