@@ -112,7 +112,7 @@ body {
 #bg {
     height:100%;
     width:100%;
-    background-image:url("./assets/img/spaceman.jpeg");
+    background-image:url("assets/img/spaceman.jpeg");
     background-size:cover;
     position:absolute;
     top:0;
