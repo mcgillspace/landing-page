@@ -1,0 +1,77 @@
+@import 'typography';
+@import 'bg';
+@import 'normify';
+@import '../sass-flexbox/sass-flexbox';
+@import 'nav';
+@import 'button';
+
+a {
+    text-decoration: none !important;    
+}
+
+.mssg-links a {
+    color: #fff;
+}
+
+@mixin abs-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mssg-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    .mssg-background {
+        height: 80vh;
+        width: 100%;
+        @include bg("/landing-page/assets/img/spaceman.jpeg");
+        position: relative;
+        
+        #background-overlay {
+            @include abs-full;
+            background-color: #444;
+            opacity: 0.8;
+        }
+        
+        .mssg-background-blurb {
+            @include abs-full;
+            @include display-flex;
+            @include flex-direction("column");
+            @include align-items("center");
+            @include justify-content("center");
+            z-index: 20;
+            
+            #blurb-text {
+                height: auto;
+                min-height: 10em;
+                @include display-flex;
+                @include align-items("center");
+                @include justify-content("center");
+                width: 50%;
+                @include rubik-700;
+                letter-spacing: 2px;
+                font-size: 24px;
+                color: #fff;
+                margin-bottom: 20px;
+                
+                @media (max-width: 960px) {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            
+            #blurb-action {
+                
+                .mssg-button {
+                    @include mssg-button("#fff", "#5E82F7");
+                }
+            }
+        }
+    }
+}

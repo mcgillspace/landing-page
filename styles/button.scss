@@ -1,0 +1,13 @@
+@mixin mssg-button($bgcolor, $color) {
+    box-sizing: border-box;
+    padding: 1em;
+    text-align: center;
+    width: auto;
+    border-radius: 3px;
+    background-color: #{$bgcolor};
+    color: #{$color};
+    @include rubik-500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
