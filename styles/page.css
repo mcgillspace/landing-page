@@ -113,6 +113,9 @@ body {
       letter-spacing: 2px;
       font-family: Rubik;
       font-weight: 500; }
+      .mssg-nav .mssg-links .mssg-link.link-active:after {
+        background-color: #5E82F7;
+        transform: scaleX(1); }
       .mssg-nav .mssg-links .mssg-link:after {
         content: "";
         position: absolute;
@@ -163,6 +166,7 @@ a {
         height: auto;
         min-height: 10em;
         width: 50%;
+        text-align: center;
         font-family: Rubik;
         font-weight: 700;
         letter-spacing: 2px;
