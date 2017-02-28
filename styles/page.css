@@ -156,7 +156,7 @@ a {
       background-color: #444;
       opacity: 0.8; }
     .mssg-content .mssg-background .mssg-background-blurb {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 0;
       height: 100%;
@@ -191,5 +191,48 @@ a {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 2px; }
-
+      
+      .mssg-content .mssg-background .mssg-background-blurb #blurb-action .mssg-button a {
+        color: #5E82F7 !important;
+      }
 /*# sourceMappingURL=page.css.map */
+
+hr {
+  border-top: 1px solid #cecece !important;
+}
+
+.mssg-sub-links {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+}
+
+.mssg-sub-links ul {
+  list-style: none;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.mssg-sub-links li {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mssg-sub-links li a {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.mssg-sub-links li a:hover {
+  color: #5E82F7;
+}
+
+/*overriding bs*/
+a:hover {
+  color: #fff !important;
+}
