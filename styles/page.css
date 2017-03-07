@@ -1,5 +1,6 @@
 body {
-  margin: 0 !important; }
+  margin: 0 !important; 
+}
 
 /**
 * SassFlexbox
@@ -12,10 +13,6 @@ body {
     Display
  */
  
- .mssg-content {
-   position: relative;
- }
- 
  .mssg-content:after {
    content: '\2605';
    position: absolute;
@@ -25,14 +22,14 @@ body {
    border-radius: 100%;
    line-height: 30px;
    box-sizing: border-box;
-   top: calc(100% - 15px);
+   top: calc(100% - 12px);
    left: calc((100% - 30px) / 2);
    background-color: #fff;
    
  }
  
  .line-gap {
-   line-height: 30px;  
+   line-height: 20px;  
  }
  
 .mssg-nav .mssg-links, .mssg-nav .mssg-links .mssg-link, .mssg-content .mssg-background .mssg-background-blurb, .mssg-content .mssg-background .mssg-background-blurb #blurb-text {
@@ -112,9 +109,11 @@ body {
     Align content
  */
 .mssg-nav {
-  position: absolute;
-  height: 4em;
+  position: fixed;
+  height: 90px;
+  line-height: 90px;
   width: 100%;
+  background-color: #fff;
   z-index: 1000;
   box-sizing: border-box;
   padding: 10px; }
@@ -133,7 +132,6 @@ body {
       min-width: 4em;
       margin-right: 30px;
       font-size: 12px;
-      color: #fff;
       letter-spacing: 2px;
       font-family: Rubik;
       font-weight: 500; }
@@ -145,11 +143,12 @@ body {
         position: absolute;
         height: 2px;
         width: 2em;
-        top: 90%;
+        top: 65%;
         left: calc((100% - 2em) / 2);
-        background-color: #fff;
+        background-color: #333;
         transform: scaleX(0);
         transition: all 0.2s ease-in-out; }
+  
       .mssg-nav .mssg-links .mssg-link:hover:after {
         transform: scaleX(1); }
 
@@ -157,20 +156,29 @@ a {
   text-decoration: none !important; }
 
 .mssg-links a {
-  color: #fff; }
+  color: #333; }
 
 .mssg-content {
   width: 100%;
+  position: relative;
   height: auto;
-  position: relative; }
+  }
+  
   .mssg-content .mssg-background {
-    height: 80vh;
+    height: 82vh;
     width: 100%;
-    background: url("/landing-page/assets/img/spaceman.jpeg");
+    background-image: url("../assets/img/spaceman.jpeg");
     background-size: cover;
-    background-position: top center;
+    background-position: 0 50px;
     background-repeat: no-repeat;
-    position: relative; }
+    position: relative;
+    }
+    @media (max-width: 960px) {
+      .mssg-content .mssg-background {
+        height: 420px !important;
+      }
+    }
+    
     .mssg-content .mssg-background #background-overlay {
       position: absolute;
       top: 0;
@@ -183,12 +191,14 @@ a {
       position: relative;
       top: 0;
       left: 0;
-      height: 100%;
+      height: inherit;
+      box-sizing: border-box;
+      padding: 30px 10px 0 0;
       width: 100%;
       z-index: 20; }
       .mssg-content .mssg-background .mssg-background-blurb #blurb-text {
         height: auto;
-        min-height: 10em;
+        min-height: 6em;
         width: 50%;
         text-align: center;
         font-family: Rubik;
@@ -231,6 +241,12 @@ hr {
   width: 100%;
 }
 
+@media (max-width: 960px) {
+  .mssg-sub-links {
+    display: none;
+  }  
+}
+
 .mssg-sub-links ul {
   list-style: none;
   text-align: center;
@@ -258,10 +274,14 @@ hr {
 }
 
 /*overriding bs*/
-a:hover {
-  color: #fff !important;
-}
 
 .container {
   font-family: "Rubik";
+}
+
+.mssg-logo {
+  display: inline-block;
+  margin-left: 100px;
+  position: relative;
+  top: -10px;
 }
