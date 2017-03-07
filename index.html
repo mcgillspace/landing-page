@@ -3,43 +3,137 @@
     <head>
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400|Lato:400:900|Pathway+Gothic+One|Source+Sans+Pro:400|Montserrat:700|Inconsolata"/>
+        <link rel="stylesheet" type="text/css" href="/landing-page/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/landing-page/styles/page.css"/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:500:700" />
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="/landing-page/styles/nami.css" />
         <title>MSSG</title>
     </head>
     <body>
-        <div id="content">
-            <div id="navbar">
-                <div id="logo">
-                    <img src="./assets/img/blackwhite.png"/>
+       <div class="nami-menu">
+            <div class="nami-menu-items">
+                <div class="nami-menu-wrap">
+                    <div class="nami-menu-item nami-font nami-active" data-name="Home" data-target="#top"><a href="/landing-page">Home</a></div>
+                    <div class="nami-menu-item nami-font" data-name="About Us"><a href="/landing-page/about">About Us</a></div>
+                    <div class="nami-menu-item nami-font" data-name="Research"><a href="/landing-page/research">Research</a></div>
+                    <div class="nami-menu-item nami-font" data-name="Competition"><a href="/landing-page/competition">Competition</a></div>
+                    <div class="nami-menu-item nami-font" data-name="Sponsorship"><a href="/landing-page/sponsorship">Sponsorship</a></div>
+                    <!--<div class="nami-menu-item nami-font has-submenu" data-name="Instructions" data-target="#instructions">-->
+                    <!--    Instructions -->
+                    <!--    <i class="nami-menu-trigger">&#9660;</i>-->
+                    <!--    <div class="nami-submenu">-->
+                    <!--        <div class="nami-menu-item nami-sub-item" data-name="Installation" data-target="#installation">Installation</div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                 </div>
-                <div id="mssg-text">McGill Space Systems Group</div>
-            </div>
-            <div id="banner">
-                <div id="banner-msg">Hey! The MSSG site is currently under construction but send any questions you have by clicking 'Learn More'</div>
-                <div id="banner-close">OK</div>
-            </div>
-            <div id="bg">
-                <div id="overlay"></div>
-            </div>
-            <div id="main-header-content">
-                <div id="welcome">Welcome to McGill’s space hub for the research and innovation of space ready technology</div>
-                <div id="join"><a href="mailto:competition.mssg@gmail.com" style="text-decoration:none">Learn More</a></div>
             </div>
         </div>
-        <div id="mission-strip">
-            <div id="mission-title">Our Mission</div>
-            <div id="mission-body">Research and build space ready technology at McGill, and participate in the Canadian Satellite Design Challenge</div>
+       <div class="nami-bar">
+            <div class="nami-bar-logo nami-font" id="demo-logo">
+                <img src="/landing-page/assets/img/mssg-icon.gif"/>
+            </div>
+            <div class="nami-display">
+                <div class="nami-selected">
+                    <div class="nami-location nami-font"></div>
+                    <div class="nami-location-arr">&#9776;</div>
+                </div>
+            </div>
         </div>
-        <div id="landing-blurb">
-            The space industry is on an up and up since companies like SpaceX have brought innovation and creativity to it.
-            <b style="text-decoration:underline;">We believe that initiatives taken towards advancing the space industry are necessary for the future of the human race.</b>
-            This belief is the foundation of the McGill Space Systems Group.
-            <br><br>
-            It is our intention that by contributing in the <b style="text-decoration:underline;">research and development of space ready technology</b>, McGill will have a great impact on the industry as a whole.
-            It is, however, important for this group to ensure that Undergraduate students learn about this sector and involve themselves in its development.
-            <br><br>In order to accomplish this, the McGill Space Systems Group participates in the <a href="http://www.csdcms.ca">Canadian Satellite Design Challenge (CSDC)</a>, which involves designing, fabricating, testing and potentially launching a nanosatellite.
-        </div>
-        <script src="./js/script.js"></script>
+        
+       <div class="mssg-content">
+           <div class="mssg-nav">
+               <div class="mssg-logo"><img src="/landing-page/assets/img/mssg64.gif"/></div>
+               <div class="mssg-links">
+                   <div class="mssg-link link-active">
+                       <a href="/landing-page">Home</a>
+                   </div>
+                   <div class="mssg-link">
+                       <a href="/landing-page/about">About Us</a>
+                   </div>
+                   <div class="mssg-link">
+                       <a href="/landing-page/research">Research</a>
+                   </div>
+                   <div class="mssg-link">
+                       <a href="/landing-page/competition">Competition</a>
+                   </div>
+                    <div class="mssg-link">
+                       <a href="/landing-page/sponsor">Sponsorship</a>
+                   </div>
+               </div>
+           </div>
+           <div class="mssg-background">
+               <div class="mssg-background-blurb">
+                   <div id="blurb-text">
+                       Welcome to McGill’s space hub for the research and innovation of space ready technology.
+                   </div>
+                   <div id="blurb-action">
+                       <div class="mssg-button">
+                           <a href="mailto:competition.mssg@gmail.com">Learn More</a>
+                       </div>
+                   </div>
+               </div>
+               <div id="background-overlay"></div>
+           </div>
+       </div>
+       <div class="container" style="margin-bottom:30px;">
+           <div class="row">
+               <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3">
+                   <h3 class="text-center">Our Mission</h3>
+                   <hr/>
+                   <div class="text-center" style="font-size: 1.2em;">
+                       Research and build space ready technology at McGill, and participate in the Canadian Satellite Design Challenge
+                   </div>
+                   <hr/>
+               </div>
+               <div class="col-md-10 col-xs-12 col-sm-12 col-md-offset-1 text-justify line-gap" style="font-size: 1em;">
+                       <p>The space industry is on an up and up since companies like SpaceX have brought innovation and creativity to it. We believe that initiatives taken towards advancing the space industry are necessary for the future of the human race. This belief is the foundation of the McGill Space Systems Group.</p>
+
+                       <p>It is our intention that by contributing in the research and development of space ready technology, McGill will have a great impact on the industry as a whole. It is, however, important for this group to ensure that Undergraduate students learn about this sector and involve themselves in its development.</p> 
+
+                       <p>In order to accomplish this, the McGill Space Systems Group participates in the Canadian Satellite Design Challenge (CSDC), which involves designing, fabricating, testing and potentially launching a nanosatellite.</p>
+               </div>
+           </div>
+       </div>
+       <script src="/landing-page/bower_components/jquery/dist/jquery.min.js"></script>
+       <script src="/landing-page/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src="/landing-page/js/nami.js"></script>
+       <script>
+            (
+                function(){
+                    //hide menu on larger screens
+                    if(window.screen.availWidth > 960) {
+                        var namiMenu = document.querySelector(".nami-menu");
+                        var namiBar = document.querySelector(".nami-bar");
+                        namiMenu.style.display = "none";
+                        namiBar.style.display = "none";
+                    }
+                    else {
+                        var menuConfig = {
+                            backgroundColor: "#333",
+                            color: "#fff"
+                        }
+                        
+                        var displayConfig = {
+                            backgroundColor: "transparent",
+                            color: "#333"
+                        }
+                        
+                        var barConfig = {
+                            backgroundColor: "#fff",
+                            borderBottom: "none",
+                            color: "#333"
+                        }
+                        
+                        var opts = {};
+                        opts["menu"] = menuConfig;
+                        opts["bar"] = barConfig;
+                        opts["display"] = displayConfig;
+                        
+                        Nami.updateConfig(opts).init();
+                    }
+                }
+            )();
+        </script>
     </body>
 </html>

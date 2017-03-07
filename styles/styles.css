@@ -1,0 +1,13 @@
+body {
+  margin: 0 !important; }
+
+.mssg-content {
+  width: 100%;
+  height: auto; }
+
+.mssg-background {
+  height: 80vh;
+  width: 100%;
+  background: url("/landing-page/assets/img/spaceman.jpeg"); }
+
+/*# sourceMappingURL=styles.css.map */

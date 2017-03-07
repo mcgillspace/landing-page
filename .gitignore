@@ -1,1 +1,5 @@
 bower_components/
+styles/*.scss
+sass-flexbox
+*.scss
+*.css.map
