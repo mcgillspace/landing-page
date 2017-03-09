@@ -15,13 +15,35 @@
             <div class="nami-menu-items">
                 <div class="nami-menu-wrap">
                     <div class="nami-menu-item nami-font nami-active" data-name="Home" data-target="#top"><a href="/landing-page">Home</a></div>
-                    <div class="nami-menu-item nami-font" data-name="About Us"><a href="/landing-page/about">About Us</a></div>
-                    <div class="nami-menu-item nami-font" data-name="Research"><a href="/landing-page/research">Research</a></div>
-                    <div class="nami-menu-item nami-font" data-name="Competition"><a href="/landing-page/competition">Competition</a></div>
-                    <div class="nami-menu-item nami-font" data-name="Sponsorship"><a href="/landing-page/sponsorship">Sponsorship</a></div>
+                    <div class="nami-menu-item nami-font has-submenu" data-name="About Us">
+                        <a href="/landing-page/about">About Us</a>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
+                        <div class="nami-submenu">
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">MSSG</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">CSDC Team</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Contact</div>
+                        </div>
+                    </div>
+                    <div class="nami-menu-item nami-font has-submenu" data-name="Research">
+                        <a href="/landing-page/research">Research</a>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
+                        <div class="nami-submenu">
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Design Projects</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Academic Papers</div>
+                        </div>
+                    </div>
+                    <div class="nami-menu-item nami-font has-submenu" data-name="Competition">
+                        <a href="/landing-page/competitions">Competitions</a>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
+                        <div class="nami-submenu">
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">CSDC</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">SEDS</div>
+                        </div>
+                    </div>
+                    <div class="nami-menu-item nami-font" data-name="Sponsorships"><a href="/landing-page/sponsor">Sponsorships</a></div>
                     <!--<div class="nami-menu-item nami-font has-submenu" data-name="Instructions" data-target="#instructions">-->
                     <!--    Instructions -->
-                    <!--    <i class="nami-menu-trigger">&#9660;</i>-->
+                    <!--    <i class="nami-menu-trigger ion-chevron-down"></i>-->
                     <!--    <div class="nami-submenu">-->
                     <!--        <div class="nami-menu-item nami-sub-item" data-name="Installation" data-target="#installation">Installation</div>-->
                     <!--    </div>-->
@@ -31,7 +53,7 @@
         </div>
        <div class="nami-bar">
             <div class="nami-bar-logo nami-font" id="demo-logo">
-                <img src="/landing-page/assets/img/mssg-icon.gif"/>
+                <a href="/landing-page"><img src="/landing-page/assets/img/mssg64.png"/></a>
             </div>
             <div class="nami-display">
                 <div class="nami-selected">
@@ -43,22 +65,58 @@
         
        <div class="mssg-content">
            <div class="mssg-nav">
-               <div class="mssg-logo"><img src="/landing-page/assets/img/mssg64.gif"/></div>
+               <div class="mssg-logo"><a href="/landing-page"><img src="/landing-page/assets/img/mssg100.png"/></a></div>
                <div class="mssg-links">
                    <div class="mssg-link link-active">
                        <a href="/landing-page">Home</a>
                    </div>
-                   <div class="mssg-link">
+                   <div class="mssg-link has-dropdown">
                        <a href="/landing-page/about">About Us</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                       <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">MSSG</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">CSDC Team</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Contact</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
-                   <div class="mssg-link">
+                   <div class="mssg-link has-dropdown">
                        <a href="/landing-page/research">Research</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                        <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Design Projects</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Academic Papers</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
-                   <div class="mssg-link">
-                       <a href="/landing-page/competition">Competition</a>
+                   <div class="mssg-link has-dropdown">
+                       <a href="/landing-page/competitions">Competitions</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                        <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">CSDC</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">SEDS</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
                     <div class="mssg-link">
-                       <a href="/landing-page/sponsor">Sponsorship</a>
+                       <a href="/landing-page/sponsor">Sponsorships</a>
                    </div>
                </div>
            </div>
@@ -101,39 +159,31 @@
        <script>
             (
                 function(){
-                    //hide menu on larger screens
-                    if(window.screen.availWidth > 960) {
-                        var namiMenu = document.querySelector(".nami-menu");
-                        var namiBar = document.querySelector(".nami-bar");
-                        namiMenu.style.display = "none";
-                        namiBar.style.display = "none";
+                    var menuConfig = {
+                        backgroundColor: "#333",
+                        color: "#fff"
                     }
-                    else {
-                        var menuConfig = {
-                            backgroundColor: "#333",
-                            color: "#fff"
-                        }
-                        
-                        var displayConfig = {
-                            backgroundColor: "transparent",
-                            color: "#333"
-                        }
-                        
-                        var barConfig = {
-                            backgroundColor: "#fff",
-                            borderBottom: "none",
-                            color: "#333"
-                        }
-                        
-                        var opts = {};
-                        opts["menu"] = menuConfig;
-                        opts["bar"] = barConfig;
-                        opts["display"] = displayConfig;
-                        
-                        Nami.updateConfig(opts).init();
+                    
+                    var displayConfig = {
+                        backgroundColor: "transparent",
+                        color: "#fff"
                     }
+                    
+                    var barConfig = {
+                        backgroundColor: "#333",
+                        opacity:"0.9",
+                        borderBottom: "none",
+                    }
+                    
+                    var opts = {};
+                    opts["menu"] = menuConfig;
+                    opts["bar"] = barConfig;
+                    opts["display"] = displayConfig;
+                    
+                    Nami.updateConfig(opts).init();
                 }
             )();
         </script>
+        <script src="/landing-page/js/dropdown.js"></script>
     </body>
 </html>

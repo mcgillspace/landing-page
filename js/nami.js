@@ -80,9 +80,12 @@ window.Nami = (function(){
         var namiMenu = document.querySelector(namiMenuSelector);
         if(!namiMenu.classList.contains("menu-open")) {
             namiMenu.classList.add("menu-open");
-        }
-        else
+            document.body.style.overflow = "hidden";
+        } 
+        else {
             namiMenu.classList.remove("menu-open");
+            document.body.style.overflow = "auto";
+        }
     }
     
     function preventEventLeak(e) {

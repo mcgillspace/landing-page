@@ -110,13 +110,14 @@ body {
  */
 .mssg-nav {
   position: fixed;
-  height: 90px;
-  line-height: 90px;
+  height: 75px;
+  line-height: 75px;
   width: 100%;
-  background-color: #fff;
+  background-color: #333;
+  opacity: 0.9;
   z-index: 1000;
   box-sizing: border-box;
-  padding: 10px; }
+  padding: 20px; }
   @media (max-width: 960px) {
     .mssg-nav {
       display: none; } }
@@ -126,6 +127,7 @@ body {
     float: right; }
     .mssg-nav .mssg-links .mssg-link {
       height: 100%;
+      line-height: 100%;
       cursor: pointer;
       position: relative;
       width: auto;
@@ -134,29 +136,51 @@ body {
       font-size: 12px;
       letter-spacing: 2px;
       font-family: Rubik;
-      font-weight: 500; }
+      font-weight: 500; 
+      
+    }
+    
+    .mssg-link i {
+      color: #fff;
+      border-radius: 100%;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 8px;
+      height: 15px;
+      width: 15px;
+      line-height: 15px;
+    }
       .mssg-nav .mssg-links .mssg-link.link-active:after {
         background-color: #5E82F7;
-        transform: scaleX(1); }
+        transform: scaleX(1); 
+        width: 2em;
+      }
+      
+      .mssg-nav .mssg-links .mssg-link:first-child:after {
+        left: 3px;  
+      }
+      
       .mssg-nav .mssg-links .mssg-link:after {
         content: "";
         position: absolute;
         height: 2px;
-        width: 2em;
-        top: 65%;
-        left: calc((100% - 2em) / 2);
-        background-color: #333;
+        top: 80%;
+        width: 0;
+        left: 0;
+        background-color: #fff;
         transform: scaleX(0);
         transition: all 0.2s ease-in-out; }
   
       .mssg-nav .mssg-links .mssg-link:hover:after {
-        transform: scaleX(1); }
+        transform: scaleX(1); 
+        width: 10px;
+      }
 
 a {
   text-decoration: none !important; }
 
 .mssg-links a {
-  color: #333; }
+  color: #fff; }
 
 .mssg-content {
   width: 100%;
@@ -169,7 +193,7 @@ a {
     width: 100%;
     background-image: url("../assets/img/spaceman.jpeg");
     background-size: cover;
-    background-position: 0 50px;
+    background-position: top center;
     background-repeat: no-repeat;
     position: relative;
     }
@@ -193,12 +217,13 @@ a {
       left: 0;
       height: inherit;
       box-sizing: border-box;
-      padding: 30px 10px 0 0;
       width: 100%;
       z-index: 20; }
       .mssg-content .mssg-background .mssg-background-blurb #blurb-text {
         height: auto;
         min-height: 6em;
+        box-sizing: border-box;
+        padding: 5px;
         width: 50%;
         text-align: center;
         font-family: Rubik;
@@ -283,5 +308,93 @@ hr {
   display: inline-block;
   margin-left: 100px;
   position: relative;
-  top: -10px;
+  top: -18px;
+}
+
+.mssg-logo img {
+  height: 80px;  
+}
+
+.mssg-dropdown {
+  position: absolute;
+  height: auto;
+  width: 14em;
+  border-radius: 4px;
+  background-color: #fff;
+  top: 90%;
+  left: -10px;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.mssg-dropdown.dd-active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  pointer-events: all;
+}
+
+.mssg-dropdown-wrap {
+  min-height: 3em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mssg-dropdown-link {
+  height: 3em;
+  color: #5E82F7;
+  width: 100%;
+  text-indent: 10px;
+  line-height: 3em;
+  border-bottom: 1px solid #cecece;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.mssg-dropdown-link:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.mssg-dropdown-link:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.mssg-dropdown-link a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.mssg-dropdown-link a:hover {
+  color: inherit;  
+}
+
+.mssg-dropdown-link:hover {
+  background-color: #5E82F7;
+  color: #fff;
+}
+
+.nami-bar, .nami-menu {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 960px) {
+  .nami-bar, .nami-menu {
+    visibility: visible;
+    pointer-events: all;
+  }
 }

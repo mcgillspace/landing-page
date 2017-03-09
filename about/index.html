@@ -14,23 +14,36 @@
        <div class="nami-menu">
             <div class="nami-menu-items">
                 <div class="nami-menu-wrap">
-                    <div class="nami-menu-item nami-font" data-name="Home"><a href="/landing-page">Home</a></div>
-                    <div class="nami-menu-item nami-font nami-active has-submenu" data-name="About Us" data-target="#top">
+                    <div class="nami-menu-item nami-font" data-name="Home" data-target="#top"><a href="/landing-page">Home</a></div>
+                    <div class="nami-menu-item nami-font has-submenu nami-active" data-name="About Us">
                         <a href="/landing-page/about">About Us</a>
-                        <i class="nami-menu-trigger">&#9660;</i>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
                         <div class="nami-submenu">
-                            <div class="nami-menu-item nami-sub-item" data-name="Sublink1" data-target="#sublink1">Sublink1</div>
-                            <div class="nami-menu-item nami-sub-item" data-name="Sublink2" data-target="#sublink2">Sublink2</div>
-                            <div class="nami-menu-item nami-sub-item" data-name="Sublink3" data-target="#sublink3">Sublink3</div>
-                            <div class="nami-menu-item nami-sub-item" data-name="Sublink4" data-target="#sublink4">Sublink4</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">MSSG</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">CSDC Team</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Contact</div>
                         </div>
                     </div>
-                    <div class="nami-menu-item nami-font" data-name="Research"><a href="/landing-page/research">Research</a></div>
-                    <div class="nami-menu-item nami-font" data-name="Competition"><a href="/landing-page/competition">Competition</a></div>
-                    <div class="nami-menu-item nami-font" data-name="Sponsorship"><a href="/landing-page/sponsorship">Sponsorship</a></div>
+                    <div class="nami-menu-item nami-font has-submenu" data-name="Research">
+                        <a href="/landing-page/research">Research</a>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
+                        <div class="nami-submenu">
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Design Projects</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">Academic Papers</div>
+                        </div>
+                    </div>
+                    <div class="nami-menu-item nami-font has-submenu" data-name="Competitions">
+                        <a href="/landing-page/competitions">Competitions</a>
+                        <i class="nami-menu-trigger ion-chevron-down"></i>
+                        <div class="nami-submenu">
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">CSDC</div>
+                            <div class="nami-menu-item nami-sub-item" data-name="MSSG">SEDS</div>
+                        </div>
+                    </div>
+                    <div class="nami-menu-item nami-font" data-name="Sponsorships"><a href="/landing-page/sponsor">Sponsorships</a></div>
                     <!--<div class="nami-menu-item nami-font has-submenu" data-name="Instructions" data-target="#instructions">-->
                     <!--    Instructions -->
-                    <!--    <i class="nami-menu-trigger">&#9660;</i>-->
+                    <!--    <i class="nami-menu-trigger ion-chevron-down"></i>-->
                     <!--    <div class="nami-submenu">-->
                     <!--        <div class="nami-menu-item nami-sub-item" data-name="Installation" data-target="#installation">Installation</div>-->
                     <!--    </div>-->
@@ -38,9 +51,9 @@
                 </div>
             </div>
         </div>
-        <div class="nami-bar">
+       <div class="nami-bar">
             <div class="nami-bar-logo nami-font" id="demo-logo">
-                <img src="/landing-page/assets/img/mssg-icon.gif"/>
+                <a href="/landing-page"><img src="/landing-page/assets/img/mssg64.png"/></a>
             </div>
             <div class="nami-display">
                 <div class="nami-selected">
@@ -48,27 +61,62 @@
                     <div class="nami-location-arr">&#9776;</div>
                 </div>
             </div>
-        </div>        
+        </div>
         
-        
-       <div class="mssg-content" id="top">
+       <div class="mssg-content">
            <div class="mssg-nav">
-               <div class="mssg-logo"><img src="/landing-page/assets/img/mssg64.gif"/></div>
+               <div class="mssg-logo"><a href="/landing-page"><img src="/landing-page/assets/img/mssg100.png"/></a></div>
                <div class="mssg-links">
                    <div class="mssg-link">
                        <a href="/landing-page">Home</a>
                    </div>
-                   <div class="mssg-link link-active">
+                   <div class="mssg-link link-active has-dropdown">
                        <a href="/landing-page/about">About Us</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                       <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">MSSG</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">CSDC Team</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Contact</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
-                   <div class="mssg-link">
+                   <div class="mssg-link has-dropdown">
                        <a href="/landing-page/research">Research</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                        <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Design Projects</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">Academic Papers</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
-                   <div class="mssg-link">
-                       <a href="/landing-page/competition">Competition</a>
+                   <div class="mssg-link has-dropdown">
+                       <a href="/landing-page/competitions">Competitions</a>
+                       <i class="ion-chevron-down dd-trigger"></i>
+                        <div class="mssg-dropdown">
+                           <div class="mssg-dropdown-wrap">
+                               <div class="mssg-dropdown-link">
+                                   <a href="">CSDC</a>
+                               </div>
+                               <div class="mssg-dropdown-link">
+                                   <a href="">SEDS</a>
+                               </div>
+                            </div>
+                       </div>
                    </div>
                     <div class="mssg-link">
-                       <a href="/landing-page/sponsor">Sponsorship</a>
+                       <a href="/landing-page/sponsor">Sponsorships</a>
                    </div>
                </div>
            </div>
@@ -144,7 +192,7 @@
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        <script src="/landing-page/js/nami.js"></script>
         <script>
-            (
+          (
                 function(){
                     //hide menu on larger screens
                     if(window.screen.availWidth > 960) {
@@ -161,13 +209,13 @@
                         
                         var displayConfig = {
                             backgroundColor: "transparent",
-                            color: "#333"
+                            color: "#fff"
                         }
                         
                         var barConfig = {
-                            backgroundColor: "#fff",
+                            backgroundColor: "#333",
+                            opacity:"0.9",
                             borderBottom: "none",
-                            color: "#333"
                         }
                         
                         var opts = {};
@@ -180,5 +228,6 @@
                 }
             )();
         </script>
+        <script src="/landing-page/js/dropdown.js"></script>
     </body>
 </html>
