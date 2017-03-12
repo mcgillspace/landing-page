@@ -1,30 +1,37 @@
 (
     function DropDown() {
         var hasDropdown = Array.prototype.slice.call(document.querySelectorAll(".has-dropdown"));
-        function toggleDropdown() {
-            var dropdown = this.querySelector(".mssg-dropdown");
-            if(dropdown.classList.contains("dd-active")) {
-                dropdown.classList.remove("dd-active");
+        var dropdownSelector = ".mssg-dropdown";
+        var activeDDSelector = "dd-active";
+        var ddTrigger = "dd-trigger";
+        
+        function toggleDropdown(e) {
+            var dropdown = this.querySelector(dropdownSelector);
+            if(dropdown.classList.contains(activeDDSelector)) {
+                dropdown.classList.remove(activeDDSelector);
             }
             else {
-                if(document.querySelector(".dd-active")) {
-                    document.querySelector(".dd-active").classList.remove("dd-active");
-                }
-                dropdown.classList.add("dd-active");
+                hideActiveDropdown(e);
+                dropdown.classList.add(activeDDSelector);
+            }
+        }
+        
+        function hideActiveDropdown(e) {
+            e.stopPropagation() || (e.cancelBubble = true);
+            var currentlyActiveDD = document.querySelector("."+activeDDSelector);
+            if(currentlyActiveDD) {
+                currentlyActiveDD.classList.remove(activeDDSelector);
             }
         }
         
         function activateDropdownTrigger(el) {
-            var trigger = el.querySelector(".dd-trigger");
-            trigger.addEventListener("click", toggleDropdown.bind(el));
+            var trigger = el.querySelector("."+ddTrigger);
+            trigger.addEvent = trigger.addEventListener ||  trigger.attachEvent;
+            trigger.addEvent("click", toggleDropdown.bind(el));
         }
         
-        document.addEventListener("click", function(e) {
-            var currentlyActive = document.querySelector(".dd-active");
-            if(currentlyActive && !e.target.classList.contains("dd-trigger")) {
-                currentlyActive.classList.remove("dd-active");
-            }
-        });
+        document.addEvent = document.addEventListener || document.attachEvent;
+        document.addEvent("click", hideActiveDropdown);
         
         hasDropdown.forEach(activateDropdownTrigger);
     }
