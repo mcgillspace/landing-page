@@ -1,0 +1,42 @@
+Home
+  - full screen animation / slideshow or something
+about
+  - MSSG
+    "who we are" : who we are, interdisciplinary team, history of the team etc
+    "our mission"
+    "meet the team"
+
+  - CSDC Team
+    "who we are"
+    "our mission" : info about the sat
+    "meet the team" : little section for each subteam
+
+  - Education Team
+    "who we are"
+    "our mission"
+    "meet the team"
+
+  - Policy Team **change to SPIRG**
+    "who we are"
+    "our mission"
+    "meet the team"
+
+  - Contact
+    "who we are"
+    "our mission"
+    "meet the team"
+
+research
+  - design-projects
+      - list the different projects
+  - academic-papers
+
+
+competitions **change to projects**
+  - csdc
+    "overview" : whats the competition, external links, etc
+    "our progress" : the mssg-csdc progress timeline
+    "our mission"
+  - seds
+    
+  - CSA Satellite
