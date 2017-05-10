@@ -25,4 +25,17 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.under-construction {
+  position: fixed;
+  width: 300px;
+  background: #333;
+  opacity: 0.5;
+  top: -75px;
+  z-index: 1000;
+  left: calc(50% - 150px);
+  text-align: center;
+  color: yellow;
+}
+
 /*# sourceMappingURL=styles.css.map */

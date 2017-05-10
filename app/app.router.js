@@ -129,7 +129,8 @@
 					templateUrl: '/landing-page/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/competitions/main.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/competitions/main.html'
 				}
 			}
 		})
@@ -143,7 +144,8 @@
 					templateUrl: '/landing-page/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/competitions/csdc.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/competitions/csdc.html'
 				}
 			}
 		})
@@ -157,7 +159,8 @@
 					templateUrl: '/landing-page/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/competitions/seds.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/competitions/seds.html'
 				}
 			}
 		})
@@ -171,7 +174,8 @@
 					templateUrl: '/landing-page/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/research/main.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/research/main.html'
 				}
 			}
 		})
@@ -185,7 +189,8 @@
 					templateUrl: '/landing-page/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/research/design-projects.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/research/design-projects.html'
 				}
 			}
 		})
@@ -199,7 +204,8 @@
 					templateUrl: '/landing-page/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/research/academic-papers.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/research/academic-papers.html'
 				}
 			}
 		})
@@ -213,7 +219,8 @@
 					templateUrl: '/landing-page/templates/sponsorships/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/sponsorships/main.html'
+					templateUrl: '/landing-page/templates/under-construction.html'
+					// templateUrl: '/landing-page/templates/sponsorships/main.html'
 				}
 			}
 		})
