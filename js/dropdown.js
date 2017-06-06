@@ -36,3 +36,20 @@
         hasDropdown.forEach(activateDropdownTrigger);
     }
 )();
+
+/*
+ * Updates the underline for each navigation bar menu item
+ *
+ * @param	{string} pageName	Name of current page
+ */
+var updateNavbarUnderlines = function (pageName) {
+	var menuItems = document.getElementsByClassName("mssg-link");
+	for (item of menuItems) {
+		if (item.id === pageName) {
+			item.classList.add("link-active");
+		}
+		else {
+			item.classList.remove("link-active");
+		}
+	}
+}
