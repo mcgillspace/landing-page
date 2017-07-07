@@ -1,6 +1,5 @@
 (function () {
 
-
 	angular
 	.module('app')
 	.config(configRoutes);
@@ -28,6 +27,7 @@
 					templateUrl: '/landing-page/templates/navbar/main.html'
 				},
 				'banner' : {
+					controller: 'BannerCtrl',
 					templateUrl: '/landing-page/templates/index/banner.html'
 				},
 				'content' : {
