@@ -22,7 +22,10 @@
 		//
 		// })
 		.state('index', {
-			url : "/",
+			url : "/?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -36,7 +39,10 @@
 			}
 		})
 		.state('about', {
-			url : "/about",
+			url : "/about?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -50,7 +56,10 @@
 			}
 		})
 		.state('about-csdc', {
-			url : "/about/csdc",
+			url : "/about/csdc?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -64,7 +73,10 @@
 			}
 		})
 		.state('about-mssg', {
-			url : "/about/mssg",
+			url : "/about/mssg?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -78,7 +90,10 @@
 			}
 		})
 		.state('about-education', {
-			url : "/about/education",
+			url : "/about/education?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -92,7 +107,10 @@
 			}
 		})
 		.state('about-policy', {
-			url : "/about/policy",
+			url : "/about/policy?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -106,7 +124,10 @@
 			}
 		})
 		.state('about-contact', {
-			url : "/about/contact",
+			url : "/about/contact?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -120,7 +141,10 @@
 			}
 		})
 		.state('competitions', {
-			url : "/competitions",
+			url : "/competitions?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -135,7 +159,10 @@
 			}
 		})
 		.state('competitions-csdc', {
-			url : "/competitions/csdc",
+			url : "/competitions/csdc?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -150,7 +177,10 @@
 			}
 		})
 		.state('competitions-seds', {
-			url : "/competitions/seds",
+			url : "/competitions/seds?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -165,7 +195,10 @@
 			}
 		})
 		.state('research', {
-			url : "/research",
+			url : "/research?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -180,7 +213,10 @@
 			}
 		})
 		.state('research-design-projects', {
-			url : "/research/design-projects",
+			url : "/research/design-projects?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -195,7 +231,10 @@
 			}
 		})
 		.state('research-academic-papers', {
-			url : "/research/academic-papers",
+			url : "/research/academic-papers?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
@@ -210,7 +249,10 @@
 			}
 		})
 		.state('sponsorships', {
-			url : "/sponsorships",
+			url : "/sponsorships?key",
+			params : {
+				key : { value : "" }
+			},
 			views : {
 				'navbar' : {
 					templateUrl: '/landing-page/templates/navbar/main.html'
