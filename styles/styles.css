@@ -8,7 +8,7 @@ body {
 .mssg-background {
   height: 80vh;
   width: 100%;
-  background: url("/landing-page/assets/img/spaceman.jpeg"); }
+  background: url("/assets/img/spaceman.jpeg"); }
 
 .indent-para {
   text-indent: 3em;

@@ -28,13 +28,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/index/banner.html'
+					templateUrl: '/templates/index/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/index/main.html'
+					templateUrl: '/templates/index/main.html'
 				}
 			}
 		})
@@ -45,13 +45,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/main.html'
+					templateUrl: '/templates/about/main.html'
 				}
 			}
 		})
@@ -62,13 +62,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/csdc.html'
+					templateUrl: '/templates/about/csdc.html'
 				}
 			}
 		})
@@ -79,13 +79,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/mssg.html'
+					templateUrl: '/templates/about/mssg.html'
 				}
 			}
 		})
@@ -96,13 +96,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/education.html'
+					templateUrl: '/templates/about/education.html'
 				}
 			}
 		})
@@ -113,13 +113,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/policy.html'
+					templateUrl: '/templates/about/policy.html'
 				}
 			}
 		})
@@ -130,13 +130,13 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/about/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/contact.html'
+					templateUrl: '/templates/about/contact.html'
 				}
 			}
 		})
@@ -147,14 +147,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
+					templateUrl: '/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/main.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/competitions/main.html'
 				}
 			}
 		})
@@ -165,14 +165,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
+					templateUrl: '/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/csdc.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/competitions/csdc.html'
 				}
 			}
 		})
@@ -183,14 +183,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
+					templateUrl: '/templates/competitions/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/seds.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/competitions/seds.html'
 				}
 			}
 		})
@@ -201,14 +201,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
+					templateUrl: '/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/main.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/research/main.html'
 				}
 			}
 		})
@@ -219,14 +219,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
+					templateUrl: '/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/design-projects.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/research/design-projects.html'
 				}
 			}
 		})
@@ -237,14 +237,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
+					templateUrl: '/templates/research/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/academic-papers.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/research/academic-papers.html'
 				}
 			}
 		})
@@ -255,14 +255,14 @@
 			},
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html'
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/sponsorships/banner.html'
+					templateUrl: '/templates/sponsorships/banner.html'
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/sponsorships/main.html'
+					templateUrl: '/templates/under-construction.html'
+					// templateUrl: '/templates/sponsorships/main.html'
 				}
 			}
 		})
